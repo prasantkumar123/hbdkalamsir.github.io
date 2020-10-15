@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>hbdKalamSir</title>
+     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+<style>
+
+body{
+margin:0;
+padding:0;
+background:url("https://www.desktopbackground.org/p/2015/09/17/1012429_beautiful-live-wallpapers-android-apps-on-google-play_506x900_h.jpg"), linear-gradient(50deg, yellow, orange, red);
+font-family: 'Sansita Swashed', cursive;
+background-size:cover;
+background-attachment:fixed;
+height:100vh;
+width:100%;
+color:#39ff14;
+text-shadow:1px 2px 5px grey;
+}
+img{
+height:50vh;
+width:90vw;
+position: relative;
+top:-10px;
+}
+legend{
+font-size:30px;
+}
+p{
+font-weight:700;
+text-shadow:1px 2px 5px grey;
+padding:5px;
+}
+h4{
+animation: op 2s ease-in infinite forwards;
+font-size:20px;
+}
+@keyframes op{
+0%{opacity:1;}
+25%{opacity:0.6;}
+50%{opacity:0;}
+75%{opacity:0.4;}
+100%{opacity:1;}
+}
+
+#show{
+    height:100vh;
+    width:100vw;
+    margin:0;
+    padding:0;
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    display:none;
+}
+#hide{
+    height:100vh;
+    width:100vw;
+    margin:0;
+    padding:0;
+    position:absolute;
+    background:linear-gradient(45deg, #EB5757, #000000);
+    background-attachment:fixed;
+    z-index:100;
+    transition:3s;
+    color:white;
+}
+audio{
+    display:none;
+}
+button{
+    position:absolute;
+    top:70%;
+    left:30%;
+    height:10vh;
+    width:50vw;
+    border:none;
+    border-radius:40%;
+    outline:none;
+    background:linear-gradient(to right, yellow, orange, red);
+}
+</style>
+
+</head>
+
+<body>
+<div id="hide">
+<h1>Happy birthday <br> Dr. Kalam Sir</h1>
+    <h1 align="center">click the button bellow to celebrate his birthday with Prasant</h1>
+    <button onclick="shown()">click</button>
+
+</div>
+<div id="show"> 
+<h1 align="center">Happy birthday Missile Man</h1>
+<h6 align="center">
+<img src="https://i2.wp.com/kashmirobserver.net/wp-content/uploads/2020/07/APJ-Abdul-Kalam.png?w=400&ssl=1">
+<legend>Dr. APJ Abdul Kalam</legend>
+</h6>
+
+<p align="center"> Sun shines in the sky, you shine in the whole world. You became immortal and stayed in every Indian's heart. <br> You are the most deserving president in India. There's no reason, bcz you are the reason yourself.  </p>
+
+
+<h3 align="center">Thanks for visiting.</h3>
+
+<h4 align="center"> &copy;Prasant</h4>
+<h4 align="center"> Developed by Prasant</h4>
+</div>
+<audio controls loop id="music">
+<source src="https://dl.dropbox.com/s/bazjdrgweh4jp8f/Kalam%20Salaam%20%28Hindi%29%20-%20A%20Tribute%20to%20Dr.%20APJ%20Abdul%20Kalam%20Ghibran%20Sandeep%20Sreevastava%20Benny%20D.mp3?raw=1">
+
+</audio>
+
+<script>
+var sh = document.getElementById("show");
+var hd = document.getElementById("hide");
+var music = document.getElementById("music");
+
+function shown(){
+
+sh.style.display = "block";
+sh.style.overflow = "visible";
+      hd.style.opacity ="0";
+      hd.style.pointerEvents= "none";
+      music.preload;
+    music.play();
+
+}
+
+</script>
+</body>
+
+</html>
